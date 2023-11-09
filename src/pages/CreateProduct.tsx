@@ -21,9 +21,8 @@ function CreateProduct() {
     const preco = event.target[1].value
     const tipo = event.target[2].value
     const SKU = event.target[3].value
-    const id = Math.floor(Math.random() * 1000);
-    const newUser: Product = { id, nome, preco, tipo, SKU, fk_Usuario_vendedor_fk: 1 };
-    postUser(newUser);
+    const newProduct: Product = { nome, preco, tipo, SKU, fk_Usuario_vendedor_fk: 1 };
+    postUser(newProduct);
   };
 
 

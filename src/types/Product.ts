@@ -1,5 +1,5 @@
 export interface Product {
-    id: number
+    id?: number
     nome: string;
     tipo: string;
     preco: number;
